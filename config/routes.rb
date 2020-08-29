@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # => staticpages#help
   
   get 'static_pages/about'
+  #ルーティングにともなったURLが使えるようになる
   
   
   
