@@ -18,6 +18,8 @@ class UsersController < ApplicationController
     if @user.save
       # 成功
       # GET "/users/#{@user.id}"
+      log_in @user
+      #サインナップ（ユーザー登録）したらログインとなる
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
       # => redirecto_to user_path(@user)
